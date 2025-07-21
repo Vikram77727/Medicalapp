@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Your Password"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/etResetEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your registered Email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm New Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_visibility_off_24"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnResetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

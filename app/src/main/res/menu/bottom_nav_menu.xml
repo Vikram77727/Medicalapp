@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_prescription"
+        android:icon="@drawable/baseline_medical_information_24"
+        android:title="Get Prescription" />
+    <item
+        android:id="@+id/nav_track"
+        android:icon="@drawable/baseline_shopping_cart_checkout_24"
+        android:title="Track Order" />
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Account" />
+</menu>

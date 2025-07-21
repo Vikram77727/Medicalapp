@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+ >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Diet Preference -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Select your Diet Plan:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnNonVeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Non-Vegetarian"
+
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+
+            <Button
+                android:id="@+id/btnKeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ketogenic"
+
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="4dp" />
+
+            <Button
+                android:id="@+id/btnVeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian"
+
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+
+            <Button
+                android:id="@+id/btnVegan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegan"
+
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Toggle Style Yes/No Questions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Are you allergic to any food items?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnYesAllergy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnNoAllergy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No"
+
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Are you consuming Alcohol?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutAlcohol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnYesAlcohol"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnNoAlcohol"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="No"
+                android:layout_height="wrap_content"
+
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Do you have irresistible sugar or refined carbohydrate cravings?"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutSugarCravings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnYesSugar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnNoSugar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="No"
+
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnLastQuestions"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="LAST QUESTIONS"
+
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnNextQuestions"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="NEXT QUESTIONS"
+
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

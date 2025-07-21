@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F5F4"
+    tools:context=".fragment.accountfragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Picture" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp" />
+
+        <!-- Premium Badge -->
+        <TextView
+            android:id="@+id/tvPremiumStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium Member 💎"
+            android:padding="6dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+        <!-- Health Info Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:weightSum="4">
+
+            <!-- Age -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/age"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Age Icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Blood -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/blood"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Blood Icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvBlood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AB+"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Height -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/height"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Height Icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.8 in"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Weight -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/weight"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Weight Icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="76"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Mood Label -->
+        <TextView
+            android:id="@+id/tvMoodLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How are you feeling?"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:textColor="#000000" />
+
+        <!-- Mood Input -->
+        <EditText
+            android:id="@+id/etMood"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="12dp"
+            android:gravity="top|start"
+            android:hint="Type your mood here"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:textSize="14sp"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- Last Update -->
+        <TextView
+            android:id="@+id/tvLastUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last update 22 Jan 2024"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#888888" />
+
+        <!-- Buttons Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnDownload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Download PDF"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:backgroundTint="#E53935"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:backgroundTint="#80CBC4"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

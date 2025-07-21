@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Medicalapp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>X
+    <string name="previous">Previous</string>
+    <string-array name="symptom_array">
+        <item>Fever</item>
+        <item>Cough</item>
+        <item>Headache</item>
+        <item>Sore Throat</item>
+    </string-array>
+
+
+</resources>
